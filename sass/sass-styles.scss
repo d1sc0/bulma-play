@@ -12,5 +12,36 @@
 
 */
 
+//site colors (generated at coolers.co)
+@import '../_bulma/sass/utilities/initial-variables.sass';
+$pearly-purple: hsl(300, 71%, 97%);
+$cyber-grape: hsl(266, 39%, 31%);
+$prussian-blue: hsl(207, 62%, 15%);
+$star-command-blue: hsl(201, 85%, 38%);
+
+$primary: $star-command-blue;
+$primary-invert: $white;
+$footer-background-color: $pearly-purple;
+$footer-color: findColorInvert($footer-background-color);
+$navbar-background-color: $primary;
+$navbar-item-color: $primary-invert;
+$navbar-burger-color: $primary-invert;
+
+// Link colors
+$link: $prussian-blue;
+$link-invert: findColorInvert($link);
+$link-light: findLightColor($link);
+$link-dark: findDarkColor($link);
+$link-visited: $purple;
+
+$link-hover: $grey-darker;
+$link-hover-border: $grey-light;
+
+$link-focus: $grey-darker;
+$link-focus-border: $blue;
+
+$link-active: $grey-darker;
+$link-active-border: $grey-dark;
+
 @charset "utf-8";
 @import '../_bulma/bulma.sass';
