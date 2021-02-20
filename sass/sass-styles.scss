@@ -1,27 +1,16 @@
 // to run css build cli 'sass --no-source-map sass/sass-styles.scss:styles.css'
-@charset "utf-8";
 
-/* Import any google Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+// Set any variables and customisation below before the import. Can also import any google fonts here.
 
-*/
-
-// Set any variables and customisation below before the import
-
-/* Import only what you need from Bulma
+/* If not using many features import more selectively as follows
 
 @import '../_bulma/sass/utilities/_all.sass';
-@import '../_bulma/sass/base/_all.sass';
 @import '../_bulma/sass/elements/button.sass';
-@import '../_bulma/sass/elements/container.sass';
-@import '../_bulma/sass/elements/title.sass';
 @import '../_bulma/sass/form/_all.sass';
 @import '../_bulma/sass/components/navbar.sass';
 @import '../_bulma/sass/layout/hero.sass';
-@import '../_bulma/sass/layout/section.sass';
-@import '../_bulma/sass/layout/section.sass'; 
 
 */
 
-//import all
+@charset "utf-8";
 @import '../_bulma/bulma.sass';
