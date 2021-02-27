@@ -66,27 +66,74 @@
 
 <!-- Form Content -->
 <section class="section">
-  <div class="container">
-    <h2 class="title mb-5">Form</h2>
+  <div class="container is-max-widescreen">
+    <div class="column is-10 is-offset-1">
     
-    <form>
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control">
-          <input class="input" type="email" placeholder="e.g. alex@example.com">
+    <!-- Form -->
+      <form class="is-fluid">
+      <h2 class="title mb-5">Create Something</h2>
+      <fieldset>
+        <!-- Text input-->
+        <div class="field">
+          <label class="label" for="textinput">Text Input</label>
+          <div class="control">
+            <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="input">
+            <p class="help">help</p>
+          </div>
         </div>
-      </div>
-      
-      <div class="field">
-        <label class="label">Password</label>
-        <div class="control">
-          <input class="input" type="password" placeholder="********">
-        </div>
-      </div>
-      
-      <button class="button is-primary">Sign in</button>
-      </form>
     
+        <!-- Select Basic -->
+        <div class="field">
+          <label class="label" for="selectbasic">Select Basic</label>
+          <div class="control">
+            <div class="select">
+              <select id="selectbasic" name="selectbasic" class="">
+                <option>Option one</option>
+                <option>Option two</option>
+              </select>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Textarea -->
+        <div class="field">
+          <label class="label" for="textarea">Text Area</label>
+          <div class="control">
+            <textarea class="textarea" id="textarea" name="textarea">default text</textarea>
+          </div>
+        </div>
+    
+        <!-- File Button -->
+    
+        <label class="label" for="filebutton">File Button</label>
+        <div class="file">
+          <label class="file-label">
+            <input class="file-input" type="file" name="filebutton"
+              onchange="if (this.files.length > 0) document.getElementById('filename-filebutton').innerHTML = this.files[0].name;">
+            <span class="file-cta">
+              <span class="file-icon">
+                <i class="fa fa-upload"></i>
+              </span>
+              <span class="file-label" id="filename-filebutton">
+                Choose a file…
+              </span>
+            </span>
+          </label>
+        </div>
+        <!-- Button (Double) -->
+        <div class="field">
+          <label class="label" for="doublebutton">Double Button</label>
+          <div class="control">
+            <button id="doublebutton" name="doublebutton" class="button is-success">Good Button</button>
+            <button id="doublebutton2" name="doublebutton2" class="button is-danger">Scary Button</button>
+          </div>
+        </div>
+    
+      </fieldset>
+    </form>
+
+    </div>
+     </div>
     </div>
 </section>
 

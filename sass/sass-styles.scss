@@ -31,20 +31,6 @@ $navbar-burger-color: $primary-invert;
 
 // Link colors
 
-$link-invert: findColorInvert($link);
-$link-light: findLightColor($link);
-$link-dark: findDarkColor($link);
-$link-visited: $link;
-
-$link-hover: $grey-darker;
-$link-hover-border: $grey-light;
-
-$link-focus: $grey-darker;
-$link-focus-border: $blue;
-
-$link-active: $grey-darker;
-$link-active-border: $grey-dark;
-
 @charset "utf-8";
 @import '../_bulma/bulma.sass';
 
