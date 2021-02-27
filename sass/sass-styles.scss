@@ -48,14 +48,6 @@ $link-active-border: $grey-dark;
 @charset "utf-8";
 @import '../_bulma/bulma.sass';
 
-.login-container {
-  width: 500px;
-}
-
-.item-container {
-  max-width: 950px;
-}
-
 .item {
   border: solid 1px $grey-light;
   border-radius: 5px;
